@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let ages= (prompt("enter the age"))
+        // let age=17;
+        // if(ages<18){
+        //     window.alert("minor");
+            
+        // }
+        // else if(ages<=60){
+        //     window.alert("adult");
+        // }
+        // else{
+
+        //     window.alert("senior");
+        // }
+        
+    //   let number=(prompt("enter the number"));
+    //     let num=0
+    //     if(num%2==0){
+    //     window.alert("number is even");
+    //     }
+    //     else if(num==0){
+    //         window.alert("number is even")
+    //     }
+    //     else{
+    //         window.alert("number is odd") 
+    //     }
+
+       
+
+        //sum of natural numbers
+
+        // sum =0;
+        //  for(let i=1;i<10;i++){
+        //  console.log(sum=sum+i);           
+        //  } 
+       
+         //factorial
+        
+        //  let num=parseInt(prompt("enter the number"))
+        //  let factorial=1;
+        //  for(i=1;i<=num;i++){
+        //     factorial=factorial*i;
+        //  }
+        //  console.log(factorial);
+
+         //check the number is prime
+
+         const number=parseInt(prompt("enter a positive number"))
+         let isprime=true 
+         //check the number is equal to 1
+         if(number==1){
+         }
+         //check the number is greaterthan1 
+         else if(number>1){
+            //looping 2 to number-1
+            for(let i=2; i<number; i++){
+                if(number % i== 0){
+           isprime=false;
+           break;
+                }
+                }
+             if(isprime){
+                console.log(`${number}is prime number`);               
+             }else{
+                console.log(`${number}is a notprime number`);
+             }
+            }
+             //check the number is less than 1
+             else{
+                console.log("the number is not a prime number");               
+             }
+                
+    </script>
+    
+</body>
+</html>

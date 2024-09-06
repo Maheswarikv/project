@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="name">name:</label>
+        <input type="text"id="name" onblur="handleblur()"placeholder="Enter your name" >
+        <button onclick="clickme()">Button 1</button>
+        <button ondblclick="clickme2()">Button2</button>
+        <img src="https://img.freepik.com/free-photo/white-cloud-blue-sky-sea_74190-4488.jpg"onmouseover="imgclick()"><br>
+
+        <label for="colors">choose colors</label>
+        <select id="colors" onchange="changecolor()">
+        <option value="red">red</option>
+        <option value="pink">pink</option>
+        <option value="black">black</option>
+    </select>
+    </form>
+
+    <script>
+        function handleblur(){
+            alert("input feld has lost focus")
+        };
+       function clickme(){
+          alert("you clicked the button")
+       }
+       function clickme2(){
+        alert("you clicked the button2")
+       }
+       function imgclick(){
+        alert("youover the image")
+       }
+       function changecolor(){
+        alert("you select $ {colors}")
+       }
+    </script>
+</body>
+</html>

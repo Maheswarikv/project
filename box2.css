@@ -1,0 +1,33 @@
+.container{
+    width: 450px;
+    height: 550px;
+    background-color: rgb(149, 148, 148);
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+#screen2{
+    background-color: white;
+    height: 80px;
+    width: 400px;
+    margin:10px;
+    font-size: 4rem;
+    text-align: right;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+button{
+    background-color: black;
+    color: azure;
+    width: 82px;
+    height: 70px;
+    font-size: 2.5rem;
+    margin: 10px;
+    border-radius: 15px;
+    margin-left: 15px;
+    
+}
+.cleardisplay{
+    background-color: whitesmoke;
+    color: lightskyblue;
+}

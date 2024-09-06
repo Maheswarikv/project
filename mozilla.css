@@ -1,0 +1,33 @@
+body{
+    background: blue;
+   
+   
+}
+.box{
+    background: black;
+    background-color:orange;
+    width: 800px;
+    height: 600px;
+    padding: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin:auto ;
+    align-items: center;
+    border: 3px solid black;
+   
+
+}
+p{
+    text-align: center;
+}
+h3{
+    text-align: center;
+
+}
+img{
+    margin-left: 250px;
+}
+h1{
+    text-align: center;
+    color: blue;
+}

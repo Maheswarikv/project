@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validationform()">
+        <form onsubmit="return validationphonenumber()">        
+        <label for="username">username</label>
+        <input type="text"id="username" name="username">
+        <input type="submit" value="submit">
+        <br><br>
+
+        <label for="phon">phonnumber</label>
+        <input type="text" id="phonenumber" name="phonenumber">       
+        <br><br>
+
+        <label for="email">email</label> 
+        <input type="text" id="email" name="email">
+    </form>
+
+    <script>
+        function validationform(){
+            var username=document.getElementById("username").value;
+
+            var phone=document.getElementById("phonenumber").value;
+            //regular expression for 10 digit
+            var phoneregesx= /^\d{10}$/;
+
+            var email=document.getElementById("email")
+             var emailcode=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if(username.trim()===''){
+                alert('username cannot be empty');
+                return false; //prevent form submission
+            }
+                     
+            else if (!phoneregesx.test(phone)){
+                alert("please Enter exactly 10 number")
+                return false;
+            }
+            else if (!emailcode.test(email))
+            alert("please Enter exact email")
+            return false;
+        }
+        return true
+        
+      
+    </script>
+</body>
+</html>
